@@ -10,21 +10,21 @@
         <script src="js/jquery-1.9.1.min.js"></script>
     </head>
     <body>
-        <div class="generate"> Generate </div>
+        <!--<div class="generate"> Generate </div> -->
         <div class="henyo"></div>
         <script>
 
-        	$(document).ready(function(){
-        		var words = ['Henyo word 1', 'Henyo word 2', 'Henyo word 3'];
-        		var randNum, word;
+            $(document).ready(function(){
+                var words = ['Henyo word 1', 'Henyo word 2', 'Henyo word 3'];
+                var randNum, word;
 
-        		$('.generate').click(function(){
-        			randNum = Math.floor(Math.random()*words.length);
-        			word = words[randNum];
-        			words.splice(randNum, 1);
-        			$('.henyo').text(word);
-        		})
-        	});
+                $(document).click(function(){
+                    randNum = Math.floor(Math.random()*words.length);
+                    word = words[randNum];
+                    words.splice(randNum, 1);
+                    $('.henyo').text(word);
+                })
+            });
         </script>
     </body>
 </html>
